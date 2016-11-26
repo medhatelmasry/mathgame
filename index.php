@@ -18,8 +18,8 @@
         && isset($answer) 
     ) {
         $ans = "";
-        if (!is_numeric($first_number) || !is_numeric($second_number)) {
-            $ans = "<span style='color: red; font-weight: bold;'>You must enter numbers;</span>";
+        if ( !is_numeric($answer) ) {
+            $ans = "<span style='color: red; font-weight: bold;'>You must enter a number for your answer.</span>";
         } else 
         switch ($operation) {
             case "+":
